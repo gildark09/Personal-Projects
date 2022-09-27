@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Don Vicente Rama Memorial National Highschool</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+  <section class="sub-header">
+    <nav>
+      <img src="/img/dvrmnhs_logo.png" alt="logo">
+      <a href="index.html"><h1 class="dvr">DVRMNHS</h1></a>
+     <div class="nav-links" id="navLinks">
+      <i class="fa fa-times" onclick="hideMenu()"></i>
+        <ul>
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="about.html">ABOUT</a></li>
+          <li><a href="course.html">COURSE</a></li>
+          <li><a href="modules.html">MODULES</a></li>
+          <li><a href="contact.html">CONTACT</a></li>
+        </ul>
+      </div>
+      <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+    <h1 class="h1">Contact Us</h1>
+  </section>
+
+  <section class="location">
+
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3925.6359905181366!2d123.86337095056207!3d10.290884992616059!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33a99c17a279d96d%3A0x51e36195e8f7ea13!2sDon%20Vicente%20Rama%20Memorial%20National%20High%20School!5e0!3m2!1sen!2sph!4v1662919583749!5m2!1sen!2sph" width="600" height="450" style="border:0;" allowfullscreen="" 
+    loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </section>
+
+  <section class="contact-us">
+
+    <div class="row">
+      <div class="contact-col">
+        <div>
+          <i class="fa fa-home"></i>
+          <span>
+            <h5>XYZ Road, ABC Building</h5>
+            <p>Bangalore, Karnataka, IN</p>
+          </span>
+        </div>
+        <div>
+          <i class="fa fa-phone"></i>
+          <span>
+            <h5>+63 902492425</h5>
+            <p>Monday to Saturday, 10am to 6pm</p>
+          </span>
+        </div>
+        <div>
+          <i class="fa fa-envelope-o"></i>
+          <span>
+            <h5>info@hotmail.com</h5>
+            <p>Email us your query</p>
+          </span>
+        </div>
+      </div>
+      <div class="contact-col">
+
+        <form action="form-handler.php" method="post">
+          <input type="text" name="name" placeholder="Enter your Name" required>
+          <input type="email" name="email" placeholder="Enter Email Address" required>
+          <input type="text" name="subject" placeholder="Enter your Subject" required>
+          <textarea rows="8" name="message" placeholder="message" required></textarea>
+          <button type="submit" class="hero-btn red-btn">Send Message</button>
+        </form>
+
+
+      </div>
+    </div>
+
+  </section>
+
+
+
+  
+  <section class="footer">
+    <h4>About Us</h4>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum ipsam quasi veniam libero cumque incidunt velit, iusto quia ipsa quos <br> architecto dolorem aliquam? Error debitis dolores pariatur similique placeat quaerat!</p>
+    <div class="icons">
+      <i class="fa fa-facebook"></i>
+      <i class="fa fa-twitter"></i>
+      <i class="fa fa-instagram"></i>
+      <i class="fa fa-linkedin"></i>
+    </div>
+    <p class="Gabtan">Made with <i class="fa fa-heart-o"></i> by Gabriel Tan </p>
+    <p class="credits">Credits <i class="fa fa-heart-o"> to Easy Tutorials</i> </p>
+  </section>
+
+
+
+  <script>
+    
+    var navLinks = document.getElementById("navLinks");
+
+    function showMenu(){
+      navLinks.style.right = "0";
+    }
+    function hideMenu(){
+      navLinks.style.right = "-200px";
+    }
+
+  </script>
+  
+</body>
+</html>
